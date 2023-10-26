@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class MainActivity2 {
+
+    public static void main(String[] args) {
+        int loop, num;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("How many employees do you want?: ");
+        num = scan.nextInt();
+
+        Employee[] employee = new Employee([num]);
+
+        for (loop = 0; loop < employee.length; loop++) {
+            System.out.println("\nInput for employee " + (loop + 1) );
+
+            System.out.print("\n\nName: ");
+            String name = scan.nextLine();scan.nextLine();
+
+            System.out.print("Age: ");
+            int age = scan.nextInt();scan.nextLine();
+
+            System.out.print("Salary: ");
+            double salary = scan.nextDouble();scan.nextLine();
+             Employee[loop] = new Employee(name,age,salary);
+
+        }
+
+        System.out.println("\nCongratulations! You have successfully employed...\n");
+        for (loop = 0; loop < employee.length; loop++) {
+            System.out.println("Name: "+employee[loop].getName()+"\nAge: "+employee[loop].getAge()+"\nSalary: "+employee[loop].getSalary());        }
+    }
+}
+
+
