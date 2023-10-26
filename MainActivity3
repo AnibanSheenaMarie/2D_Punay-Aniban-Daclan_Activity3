@@ -1,0 +1,17 @@
+public class MainActivity3 {
+  public class MainActivity1 extends MainActivity3{
+      public void print_welcome(){
+          System.out.println("Welcome Employee");
+      }
+  } 
+    public class MainActivity2 extends MainActivity3{
+        public void print_world(){
+            System.out.println(" to the World");
+        }
+    }
+    public class Employee extends MainActivity1{
+        public void print_market(){
+            System.out.println("Market.");
+        }
+    }
+}
